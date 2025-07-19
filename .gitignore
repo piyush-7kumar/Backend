@@ -11,5 +11,5 @@ routes/user.routes.js
 validators
 
 http-currency.js
-currencies.json
+
 users.json
