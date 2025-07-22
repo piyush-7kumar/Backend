@@ -10,8 +10,6 @@ middlewares/userSearchValidator.js
 middlewares/verifyAuth.js
 
 
-routes/user.routes.js
-
 validators
 
 db
