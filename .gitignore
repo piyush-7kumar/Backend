@@ -15,5 +15,3 @@ routes/user.routes.js
 validators
 
 db
-
-users.json
