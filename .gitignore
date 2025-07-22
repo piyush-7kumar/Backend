@@ -1,14 +1,19 @@
 .env
 
-
+controllers
+controllers/currencies.controller.js
 controllers/users.controller.js
 controllers/users.controllerWithoutJOI.js
-controllers
+
 middlewares
-routes
+middlewares/userSearchValidator.js
+middlewares/verifyAuth.js
+
+
 routes/user.routes.js
 
 validators
 
+db
 
 users.json
