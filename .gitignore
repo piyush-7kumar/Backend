@@ -3,7 +3,6 @@
 
 
 controllers/users.controller.js
-controllers/users.controllerWithoutJOI.js
 controllers/blogs.controller.js
 
 middlewares
