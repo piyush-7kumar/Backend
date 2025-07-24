@@ -5,7 +5,6 @@
 
 controllers/blogs.controller.js
 
-middlewares/verifyAuth.js
 
 routes/blog.routes.js
 validators
