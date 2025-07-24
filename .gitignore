@@ -5,8 +5,6 @@
 
 controllers/blogs.controller.js
 
-middlewares
-middlewares/userSearchValidator.js
 middlewares/verifyAuth.js
 
 routes/blog.routes.js
