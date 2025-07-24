@@ -7,7 +7,6 @@ controllers/blogs.controller.js
 
 
 routes/blog.routes.js
-validators
 
 db
 models
