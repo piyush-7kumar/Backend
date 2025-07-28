@@ -2,10 +2,18 @@ const Blogs = require("../models/blogs.model");
 
 
 const createNewBlog = async (req,res)=>{
-    const {title} = req.body;
-    const newBlogDoc = new Blogs({title});
-    const result = await newBlogDoc.save();
-    res.json(result)
+    try {
+        const body = req.body;
+        const newBlogDoc = new Blogs(body);
+        const result = await newBlogDoc.save();
+        res.json(result);
+    } catch (error) {
+        res.status(500).json({
+        message: "Couldn't create new blog post. Please try again",
+        error,
+      });
+    }
+
 
 }
 const getAllBlogs= async(req,res)=>{
