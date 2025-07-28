@@ -12,7 +12,8 @@ const authorSchema = new mongoose.Schema( {
       maxlength: 50,
       validate: (value) => validator.isEmail(value), //returns boolean value
     },
-    image: { type: String },
+     image: { type: String, validate: (value) => validator.isURL(value) },
+
 },
 { _id: false }
 );
