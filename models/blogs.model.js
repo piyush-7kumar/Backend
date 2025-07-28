@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
 
+const authorSchema = require('./authors.model')
+
 const blogSchema = new mongoose.Schema({
     title: { type:String, required:true, unique:true },
-    authors: { type: [String]},
+    authors: [authorSchema],
     content: { type:String, default: ""},
     publishedAt: { type: Date, default: null },
 },{ timestamps: true });
